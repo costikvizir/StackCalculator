@@ -1,0 +1,14 @@
+C:\Users\crme089\source\repos\StackCalculator\StackCalculator\bin\Debug\net6.0\StackCalculator.exe
+C:\Users\crme089\source\repos\StackCalculator\StackCalculator\bin\Debug\net6.0\StackCalculator.deps.json
+C:\Users\crme089\source\repos\StackCalculator\StackCalculator\bin\Debug\net6.0\StackCalculator.runtimeconfig.json
+C:\Users\crme089\source\repos\StackCalculator\StackCalculator\bin\Debug\net6.0\StackCalculator.dll
+C:\Users\crme089\source\repos\StackCalculator\StackCalculator\bin\Debug\net6.0\StackCalculator.pdb
+C:\Users\crme089\source\repos\StackCalculator\StackCalculator\obj\Debug\net6.0\StackCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crme089\source\repos\StackCalculator\StackCalculator\obj\Debug\net6.0\StackCalculator.AssemblyInfoInputs.cache
+C:\Users\crme089\source\repos\StackCalculator\StackCalculator\obj\Debug\net6.0\StackCalculator.AssemblyInfo.cs
+C:\Users\crme089\source\repos\StackCalculator\StackCalculator\obj\Debug\net6.0\StackCalculator.csproj.CoreCompileInputs.cache
+C:\Users\crme089\source\repos\StackCalculator\StackCalculator\obj\Debug\net6.0\StackCalculator.dll
+C:\Users\crme089\source\repos\StackCalculator\StackCalculator\obj\Debug\net6.0\refint\StackCalculator.dll
+C:\Users\crme089\source\repos\StackCalculator\StackCalculator\obj\Debug\net6.0\StackCalculator.pdb
+C:\Users\crme089\source\repos\StackCalculator\StackCalculator\obj\Debug\net6.0\StackCalculator.genruntimeconfig.cache
+C:\Users\crme089\source\repos\StackCalculator\StackCalculator\obj\Debug\net6.0\ref\StackCalculator.dll
