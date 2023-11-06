@@ -7,60 +7,21 @@ string expression = Console.ReadLine() ?? "0";
 //parse each operand and store in a data structure
 string noSpaceExpr = expression.Replace(" ", "");
 
-Console.WriteLine(noSpaceExpr.IsValidExpression() ? noSpaceExpr : "Enter a valid expression");
+//Console.WriteLine(noSpaceExpr.IsValidExpression() ? noSpaceExpr : "Enter a valid expression");
+
+//Console.WriteLine(noSpaceExpr.Eval());
 //validate the expression
 
-List<string> arguments = new List<string>();
-int x, y;
-Stack<int> stack = new Stack<int>();
+var strings = noSpaceExpr.InfixToPostfix();
 
-string str = "(4+3)*( 447 -124 )";
 
-List<char> chars = str.ToCharArray().ToList();
 
-List<string> tokens = new List<string>();
+var result = noSpaceExpr.InfixToPostfix().Eval();
 
-string temp = string.Empty;
-//for (int i = 0; i < noSpaceExpr.Length; i++)
-//{ 
-//    if (!char.IsDigit(str[i]))
-//    {
-//        tokens.Add(temp);
-//        tokens.Add(str[i].ToString());
-//        temp = string.Empty;
-//    }
-//    temp += str[i];       
-//}
+Console.Write("The result is: ");
 
-//for (int i = 0; i < noSpaceExpr.Length; i++)
-//{
-//    temp += noSpaceExpr[i];
-//    if (!char.IsDigit(str[i]))
-//    {
-//        tokens.Add(temp);
-//        tokens.Add(str[i].ToString());
-//        temp = string.Empty;
-//    }
-//}
-//string val = noSpaceExpr;
-//int count = 0;
-//while (val.Length>0)
-//{
-//    temp += val[count];
-//    if (!char.IsDigit(val[0]))
-//    {
-//        tokens.Add(str[0].ToString());
-//        val.Remove(0, 1);
-//        temp = string.Empty;
-//        count = 0;
-//    }
-//    count++;
-//    val.Remove(0, 1);
-//}
+Console.WriteLine(result);
 
-//foreach (var item in tokens)
-//{
-//    Console.WriteLine(item);
-//}
 
-Console.WriteLine(noSpaceExpr.Eval());
+
+
