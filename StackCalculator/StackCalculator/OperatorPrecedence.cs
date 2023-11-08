@@ -13,14 +13,14 @@ namespace StackCalculator
         public static bool HasGreaterPrecedence(this char leftOperator, char rightOperator)
         {
             Dictionary<char, int> operators = new Dictionary<char, int>();
-            operators.Add('(', 1);
-            operators.Add(')', 1);
-            operators.Add('*', 2);
-            operators.Add('/', 2);
-            operators.Add('-', 3);
-            operators.Add('+', 3);
+            operators.Add('(', 3);
+            operators.Add(')', 3);
+            operators.Add('*', 1);
+            operators.Add('/', 1);
+            operators.Add('-', 2);
+            operators.Add('+', 2);
 
-            return  operators[leftOperator] < operators[rightOperator];
+            return  operators[leftOperator] <= operators[rightOperator];
         }
     }
 }

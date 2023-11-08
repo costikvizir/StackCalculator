@@ -12,8 +12,9 @@ namespace StackCalculator
         public static List<string> InfixToPostfix(this string input)
         {
             List<string> output = new List<string>();
-            List<string> tokens = input.SplitToList();
+            List<string> tokens = input.SplitToList().InsertZeros();
             Stack<string> operators = new Stack<string>();
+            string temp = string.Empty;
 
             for (int i = 0; i < tokens.Count; i++)
             {
@@ -22,9 +23,7 @@ namespace StackCalculator
 
                 // If the scanned character is an '(', push it to the stack.
                 else if (tokens[i] == "(")
-                {
                     operators.Push(tokens[i]);
-                }
 
                 // If the scanned character is an ')', pop and output
                 // from the stack until an '(' is encountered.
@@ -40,7 +39,7 @@ namespace StackCalculator
                 else
                 {
                     while (operators.Count > 0
-                        && Convert.ToChar(tokens[i]).HasGreaterPrecedence(Convert.ToChar(operators.Peek())))
+                        && !Convert.ToChar(tokens[i]).HasGreaterPrecedence(Convert.ToChar(operators.Peek())))
                     {
                         output.Add(operators.Pop());
                     }
